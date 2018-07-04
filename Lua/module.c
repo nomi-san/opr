@@ -5,7 +5,7 @@
 
 typedef BOOL(__stdcall * EmptyWorkingSet)(HANDLE);
 
-int l_OpenProcess(lua_State* L)
+static int l_OpenProcess(lua_State* L)
 {
 	lua_pushinteger(L, 
 		(int)OpenProcess(
@@ -16,7 +16,7 @@ int l_OpenProcess(lua_State* L)
 	return 1;
 }
 
-int l_EmptyWorkingSet(lua_State* L)
+static int l_EmptyWorkingSet(lua_State* L)
 {
 	HMODULE module = LoadLibraryA("psapi.dll");
 	FARPROC proc = GetProcAddress(module, "EmptyWorkingSet");
@@ -27,7 +27,7 @@ int l_EmptyWorkingSet(lua_State* L)
 	return 1;
 }
 
-int l_CloseHandle(lua_State* L)
+static int l_CloseHandle(lua_State* L)
 {
 	lua_pushinteger(L,
 		CloseHandle(
@@ -36,7 +36,7 @@ int l_CloseHandle(lua_State* L)
 	return 1;
 }
 
-__declspec(dllexport) int __cdecl luaopen_module(lua_State* L)
+int __declspec(dllexport) luaopen_module(lua_State* L)
 {
 	lua_register(L, "OpenProcess", l_OpenProcess);
 	lua_register(L, "EmptyWorkingSet", l_EmptyWorkingSet);
