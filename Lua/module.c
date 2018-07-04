@@ -1,7 +1,7 @@
 #include <windows.h>
-#include "lua/src/lua.h"
-#include "lua/src/lapi.h"
-#include "lua/src/lauxlib.h"
+#include "lua.h"
+#include "lapi.h"
+#include "lauxlib.h"
 
 typedef BOOL(__stdcall * EmptyWorkingSet)(HANDLE);
 
