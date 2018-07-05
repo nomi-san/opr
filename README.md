@@ -9,58 +9,59 @@ Ram optimizers for all process, with 5 programming languages on Windows
 
 __Q__: What is loop count 32768?
 
-__A__: It's max process id in Windows.
+__A__: _It's max process id in Windows._
 
 <br>
 
 __Q__: Why not using EnumProcesses?
 
-__A__: No ignore any processes while loop counting (else process id < current count, not else =)))
+__A__: _No ignore any processes while loop counting (else process id < current count, not else =)))._
 
 <br>
 
 __Q__: When run it?
 
-__A__: Anytime, if you need.
+__A__: _Anytime, if you need._
 
 <br>
 
 __Q__: What should use for...?
 
-__A__: Chromium browser (eg: Chrome, Opera), .NET appliaction ..
+__A__: _Chromium browser (eg: Chrome, Opera), .NET appliaction .._
 
 <br>
 
 __Q__: Can I run it for only my program?
 
-__A__: Yes, you can delete loop and change process id to it.
+__A__: _Yes, you can delete loop and change process id to it._
 
 <br>
 
 __Q__: How it works?
 
-__A__: See code.
+__A__: _See code._
 
 <br>
 
 __Q__: I'm not dev or coder?
 
-__A__: Run executable file.
+__A__: _Run executable file._
 
 <br>
 
 __Q__: I'm don't know 'how to build'.
 
-__A__: RUn executable file.
+__A__: _Run executable file._
 
 <br>
 
 __Q__: Great!
 
-__A__: Yes!
+__A__: _Yes!_
 
 <br>
 
 __Q__: Hmmm...
 
-__A__: Shut up!
+__A__: _Nothing, go back!_
+
