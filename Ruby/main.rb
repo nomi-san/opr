@@ -12,7 +12,7 @@ module WinAPI # f*ck!!! uppercase first character
 	attach_function :EmptyWorkingSet, :EmptyWorkingSet, [ :pointer ], :bool
 end
 
-pid = 1
+pid = 0
 until pid >= 32768
 	handle = WinAPI.OpenProcess(0x1F0FFF, false, pid)
 		if handle
@@ -20,5 +20,5 @@ until pid >= 32768
 			WinAPI.EmptyWorkingSet(handle)
 			WinAPI.CloseHandle(handle)
 		end
-	pid += 1
+	pid += 4
 end
