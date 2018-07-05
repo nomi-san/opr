@@ -49,9 +49,15 @@ __A__: _Run executable file._
 
 <br>
 
-__Q__: I'm don't know 'how to build'.
+__Q__: I don't know 'how to build?'.
 
 __A__: _Run executable file._
+
+<br>
+
+__Q__: I dont't understand anything.
+
+__A__: _Oh!_
 
 <br>
 
