@@ -4,5 +4,26 @@ Ram optimizers for all process, with 5 programming languages on Windows
 
 ### [__EmptyWorkingSet__](https://docs.microsoft.com/en-us/windows/desktop/api/psapi/nf-psapi-emptyworkingset) is the best!
 
-What is loop count 32768?
-It's max process id in Windows.
+
+### FAQ
+__Q__: What is loop count 32768?
+
+__A__: It's max process id in Windows.
+
+<br>
+
+__Q__: Why not using EnumProcesses?
+
+__A__: No ignore any processes while loop counting (else process id < current count, not else =)))
+
+<br>
+
+__Q__: When run it?
+
+__A__: Anytime, if you need.
+
+<br>
+
+__Q__: What should use for...?
+
+__A__: Chromium browser (eg: Chrome, Opera), .NET appliaction ..
