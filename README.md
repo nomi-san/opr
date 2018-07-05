@@ -13,6 +13,12 @@ __A__: _It's max process id in Windows._
 
 <br>
 
+__Q__: Why multiples of four?
+
+__A__: [__See here__](https://superuser.com/questions/936773/why-are-there-no-odd-windows-process-ids)
+
+<br>
+
 __Q__: Why not using EnumProcesses?
 
 __A__: _No ignore any processes while loop counting (else process id < current count, not else =)))._
