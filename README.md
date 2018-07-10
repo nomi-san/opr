@@ -4,6 +4,7 @@ Ram optimizers for all processes, with 5 programming languages for Windows
 
 ### [__EmptyWorkingSet__](https://docs.microsoft.com/en-us/windows/desktop/api/psapi/nf-psapi-emptyworkingset) is the best!
 
+<br>
 
 ### FAQ
 
