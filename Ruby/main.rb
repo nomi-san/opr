@@ -1,6 +1,6 @@
 require "ffi"
 
-module WinAPI # f*ck!!! uppercase first character
+module WinAPI # f*ck!!! uppercase first character for module name
 	extend FFI::Library
 	ffi_lib 'kernel32'
 	attach_function :OpenProcess, :OpenProcess, [ :uint, :bool, :uint ], :pointer
