@@ -13,7 +13,7 @@ int main() {
 	HMODULE module2 = LoadLibraryA("kernel32.dll");
 	FARPROC proc = GetProcAddress(module, "EmptyWorkingSet"); // no need add psapi library
 	FARPROC proc2 = GetProcAddress(module2, "SetProcessWorkingSetSizeEx");
-	for (int i = 0; i <= 32768; i+=4) {
+	for (int i = 0; i <= 32768; i+=4) /* i++ */ {
 		HANDLE handle = OpenProcess(0x1F0FFF, 0, i);
 		if (handle) {
 			((_SetProcessWorkingSetSizeEx)(proc2))(handle, -1, -1, 0x1);
@@ -21,6 +21,5 @@ int main() {
 			CloseHandle(handle); 
 		}
 	}
-
-	return 1;
+	return 0;
 }
