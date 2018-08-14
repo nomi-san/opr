@@ -12,10 +12,10 @@ __A__: _It's max process id in Windows._
 
 <br>
 
-__Q__: Why multiples of four?
+__Q__: Why not multiples of four?
 
 __A__: [__See here__](https://superuser.com/questions/936773/why-are-there-no-odd-windows-process-ids).
-Wait..., it not true on some versions of Windows and some hidden-system-process numbers is odd.
+Process number always multiples  of four, wait it not true on some versions of Windows and some hidden-system-process numbers is odd.
 
 <br>
 
