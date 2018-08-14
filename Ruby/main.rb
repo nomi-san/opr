@@ -20,5 +20,5 @@ until pid >= 32768
 			WinAPI.EmptyWorkingSet(handle)
 			WinAPI.CloseHandle(handle)
 		end
-	pid += 4
+	pid += 1 # 4
 end
