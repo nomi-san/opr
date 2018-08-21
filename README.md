@@ -4,7 +4,7 @@ Ram optimizers for all processes, with 5 programming languages for Windows
 
 ### Don't ask me 'how it works?', please see [__EmptyWorkingSet__](https://docs.microsoft.com/en-us/windows/desktop/api/psapi/nf-psapi-emptyworkingset) :)
 
-### FAQ
+### FAQ (forever alone's questions :))
 
 __Q__: What is loop count 32768?
 
