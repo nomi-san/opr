@@ -1,6 +1,9 @@
 OPR
 ===
 
+*Give me beer if it useful* <br>
+[![Beerpay](https://beerpay.io/wy3/opr/badge.svg)](https://beerpay.io/wy3/opr)
+
 About
 ---
 - Ram optimizers for all processes on Windows.
