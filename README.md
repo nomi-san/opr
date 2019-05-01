@@ -18,6 +18,10 @@ printf("process [%d]: %s\n",
 ### multi-lang
 
 List of bindings language:
-- Lua: [lopr.c](https://github.com/wy3/opr/tree/main/bindings/lua)
-- LuaJIT: [opr.lua](https://github.com/wy3/opr/tree/main/bindings/lua/luajit)
-- Python: [opr.py](https://github.com/wy3/opr/tree/main/bindings/python)
+- [ ] AutoIt
+- [ ] Go
+- [x] Lua - [lopr.c](https://github.com/wy3/opr/tree/main/bindings/lua) (C library)
+- [x] LuaJIT - [opr.lua](https://github.com/wy3/opr/tree/main/bindings/lua/luajit)
+- [x] Python - [opr.py](https://github.com/wy3/opr/tree/main/bindings/python)
+- [ ] Ruby
+- [ ] Rust
