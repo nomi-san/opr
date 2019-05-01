@@ -17,11 +17,19 @@ printf("process [%d]: %s\n",
 
 ### multi-lang
 
-List of bindings language:
+#### List of bindings language:
 - [ ] AutoIt
+- [ ] C#
 - [ ] Go
 - [x] Lua - [lopr.c](https://github.com/wy3/opr/tree/main/bindings/lua) (C library)
 - [x] LuaJIT - [opr.lua](https://github.com/wy3/opr/tree/main/bindings/lua/luajit)
 - [x] Python - [opr.py](https://github.com/wy3/opr/tree/main/bindings/python)
 - [ ] Ruby
 - [ ] Rust
+
+#### For language that has FFI supports
+- Create a new **C** source and add: `#include "opr.h"` (add DllMain if necessary)
+- Build as *dynamic library/DLL* with preprocessor: `OPR_EXPORTS` or `BUILD_DLL`
+```
+$ gcc -w -shared -O2 -o opr.dll -DBUILD_DLL src.c -lpsapi
+```
