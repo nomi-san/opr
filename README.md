@@ -4,7 +4,7 @@ Reduces RAM usage for process on Windows.
 ### example
 
 ```c
-#include "opr"
+#include "opr.h"
 
 int processId = 123; // -1 for current process
 int ret = opr_Clean(processId);
