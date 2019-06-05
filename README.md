@@ -28,7 +28,7 @@ printf("process [%d]: %s\n",
 - [ ] Rust
 
 #### For language that has FFI supports
-- Create a new **C** source and add: `#include "opr.h"` (add DllMain if necessary)
+- Create a new **C** source and add: `#include "opr.h"` (add [DllMain](https://docs.microsoft.com/en-us/windows/desktop/dlls/dllmain) if necessary)
 - Build as *dynamic library/DLL* with preprocessor: `OPR_EXPORTS` or `BUILD_DLL`
 ```
 $ gcc -w -shared -O2 -o opr.dll -DBUILD_DLL src.c -lpsapi
