@@ -1,12 +1,16 @@
 # opr
-**Single C/C++** header that supports **reducing RAM usage** for process on Windows.
+**Single C/C++ header** that supports **reducing RAM usage** for process.
+
+### platform
+- [x] Windows x86 & x64
+- [ ] Linux
 
 ### example
 
 ```c
 #include "opr.h"
 
-int processId = 123; // -1 for current process
+int processId = 1024; // -1 for current process
 int ret = opr_Clean(processId);
 printf("process [%d]: %s\n",
     processId,
@@ -15,9 +19,9 @@ printf("process [%d]: %s\n",
 
 ```
 
-### multi-lang
+### multiple languages
 
-#### List of bindings language:
+#### Bindings languages:
 - [ ] AutoIt
 - [ ] C#
 - [ ] Go
@@ -27,7 +31,7 @@ printf("process [%d]: %s\n",
 - [ ] Ruby
 - [ ] Rust
 
-#### For language that has FFI supports
+#### FFI supports
 - Create a new **C** source and add: `#include "opr.h"` (add [DllMain](https://docs.microsoft.com/en-us/windows/desktop/dlls/dllmain) if necessary)
 - Build as *dynamic library/DLL* with preprocessor: `OPR_EXPORTS` or `BUILD_DLL`
 ```
