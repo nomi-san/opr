@@ -1,5 +1,5 @@
 # opr
-**Single C/C++ header** that supports **reducing RAM usage** for process.
+Single C/C++ header only that supports reducing process RAM usage.
 
 ### platform
 - [x] Windows x86 & x64
